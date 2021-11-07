@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <title>Blog</title>
+
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/log.css" />
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/icono.png" />
+
+
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Registrate </h2>
+            <a href="index.html"><img src="assets/logo/logo.png"></a>
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="nombre" class="fadeIn second" name="login" placeholder="Nombre">
+                <input type="text" id="apellido" class="fadeIn second" name="login" placeholder="Apellido">
+                <a>Genero</a>
+                <br>
+                <select name="genero" id="genero" class="fadeIn second">
+					<option>M</option>
+					<option>F</option>
+				</select>
+                <br>
+                <input type="text" id="username" class="fadeIn second" name="login" placeholder="Nombre de Usuario">
+                <input type="email" id="email" class="fadeIn second" name="login" placeholder="Correo">
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+                <input onclick="Registro()" type="button" class="fadeIn fourth" value="Registrar">
+            </form>
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" onclick="Login()">¿Ya tienes cuenta? Inicia Sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/funciones.js"></script>
+</body>
+
+</html>

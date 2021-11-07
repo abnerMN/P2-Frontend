@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Blog</title>
+
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/log.css" />
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/icono.png" />
+
+
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Ingresar </h2>
+            <a href="index.html"><img src="assets/logo/logo.png"></a>
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="usuario" class="fadeIn second" name="login" placeholder="Username">
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+                <input onclick="IniciarSesion()" type="button" class="fadeIn fourth" href="" value="Ingresar">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" onclick="Registrate()">¿No tienes cuenta? Registrate</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/funciones.js"></script>
+
+</body>
+
+</html>

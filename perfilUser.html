@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Blog</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="assets/logo/icono.png">
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/assets_u/css/theme-3.css">
+
+    <style>
+        input[type=text],
+        input[type=password],
+        input[type=email],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=button] {
+            width: 100%;
+            background-color: #2e60bd;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        div {
+            border-radius: 5px;
+            /*   background-color: #f2f2f2;*/
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body onload="CargaInfo()">
+    <header class="header text-center">
+        <h1 class="blog-name pt-lg-4 mb-0">
+            <a id="user"></a>
+        </h1>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+            <div id="navigation" class="collapse navbar-collapse flex-column">
+                <div class="profile-section pt-3 pt-lg-0">
+                    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/assets_u/images/profile.png" alt="image">
+                    <hr>
+                </div>
+                <!--//profile-section-->
+                <ul class="navbar-nav flex-column text-left">
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="adm_user()"><i class="fas fa-user fa-fw mr-2"></i>Usuarios<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="adm_publi()"><i class="fas fa-bookmark fa-fw mr-2"></i>Publicaciones</a>
+                    </li>
+                </ul>
+                <div class="my-2 my-md-3">
+                    <a class="btn btn-primary" onclick="Login()" href="" target="_blank">Cerrar Sesion</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="container text-center">
+            <div>
+                <br>
+                <h3>Perfil de Usuario</h3>
+                <form action="/action_page.php">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="ModNombre" name="firstname" placeholder="Nombre">
+
+                    <label for="lname">Apellido</label>
+                    <input type="text" id="ModApellido" name="lastname" placeholder="Apellido.">
+
+                    <label for="genero">Genero</label>
+                    <select id="genero" name="genero">
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                  </select>
+                    <label for="lname">Correo</label>
+                    <input type="email" id="ModEmail" name="lastname" placeholder="email">
+                    <label for="lname">Nombre de Usuario</label>
+                    <input type="text" id="ModUsername" name="lastname" placeholder="Username">
+                    <label for="lname">Contraseña</label>
+                    <input type="text" id="ModPassword" name="lastname" placeholder="password">
+                    <input type="button" onclick="MofidicarUsuario()" value="Actualizar">
+
+                </form>
+            </div>
+        </div>
+        <!--//container-->
+    </div>
+    <!--//main-wrapper-->
+
+
+
+
+    <!-- Javascript -->
+    <script src="assets/js/funciones.js"></script>
+    <script src="assets/assets_u/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/assets_u/plugins/popper.min.js"></script>
+    <script src="assets/assets_u/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/assets_u/js/blog.js"></script>
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/assets_u/js/demo/style-switcher.js"></script>
+
+
+</body>
+
+</html>
