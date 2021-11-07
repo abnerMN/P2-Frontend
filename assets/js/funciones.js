@@ -184,7 +184,7 @@ function MofidicarUsuario() {
             console.log(response.message)
             if (response.message == "030") {
                 alert(response.reason)
-                location.href = 'adm_in.html' //vinculo de pagina
+                location.href = 'adm_us.html' //vinculo de pagina
             } else {
                 alert(response.reason)
             }
