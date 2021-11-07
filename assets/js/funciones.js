@@ -291,7 +291,7 @@ function guardarPublicaciones() {
             })
     }
     alert("Publicaciones Subidas, cargue otra vez la pagina")
-    user_pb()
+    adm_publi()
 }
 
 //obtener evento archivo publicacion
