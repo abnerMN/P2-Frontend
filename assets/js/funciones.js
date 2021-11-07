@@ -291,6 +291,7 @@ function guardarPublicaciones() {
             })
     }
     alert("Publicaciones Subidas, cargue otra vez la pagina")
+    user_pb()
 }
 
 //obtener evento archivo publicacion
